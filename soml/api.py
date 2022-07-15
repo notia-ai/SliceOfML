@@ -4,6 +4,7 @@ from .display import Display
 from datetime import datetime, timedelta
 from soml.apikey import read_credentials
 
+
 class API:
     """
     Class representing the twitter API

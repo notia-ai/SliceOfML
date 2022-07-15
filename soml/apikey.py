@@ -1,5 +1,5 @@
 import os
-from typing import Tuple 
+from typing import Tuple
 from urllib.parse import urlparse
 import textwrap
 import stat
@@ -13,6 +13,7 @@ from requests.auth import HTTPBasicAuth
 from soml.display import Display
 
 display = Display()
+
 
 def _find_netrc_api_key(url, raise_errors=False):
     NETRC_FILES = (".netrc", "_netrc")

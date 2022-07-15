@@ -33,7 +33,7 @@ def login(relogin):
             token = request_access_token(client_id, client_secret)
             write_netrc(TWITTER_API, app_name, token)
             click.echo("You've sucessfully logged in ✅")
-        except:
+        except Exception:
             click.echo("Failed to fetch your token, check your credentials! ❌")
     else:
         click.echo(
