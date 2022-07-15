@@ -1,6 +1,6 @@
 [flake8]
 min_python_version = 3.7.0
-max-line-length = 100 
+max-line-length = 120 
 ban-relative-imports = true
 per-file-ignores =
     # F401: Module imported by unused (non-implicit modules)
