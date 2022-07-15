@@ -2,7 +2,6 @@ import requests
 from typing import Optional
 from .display import Display
 from datetime import datetime, timedelta
-from sliceofml.apikey import read_credentials
 
 
 class API:
@@ -10,14 +9,14 @@ class API:
     Class representing the twitter API
     """
 
-    def __init__(self, api_url: str) -> None:
+    def __init__(self, user_agent: str, bearer_token: str, api_url: str) -> None:
         self._session = requests.Session()
         self._api_url = api_url
         self._request_url = self._api_url + "/2/tweets/search/recent"
         self._page_size = 100
-        self._max_pages = 10
-        (self._user_agent, self._bearer_token) = read_credentials(self._api_url)
-
+        self._max_pages = 100
+        self._user_agent = user_agent
+        self._bearer_token = bearer_token
         self._display = Display()
 
     def bearer_oauth(self, r):

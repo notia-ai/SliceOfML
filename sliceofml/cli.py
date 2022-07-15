@@ -1,4 +1,5 @@
 import click
+from sliceofml.api import API
 
 from sliceofml.apikey import (
     read_credentials,
@@ -6,7 +7,7 @@ from sliceofml.apikey import (
     request_access_token,
     write_netrc,
 )
-from sliceofml.config import TWITTER_API, Api
+from sliceofml.config import TWITTER_API
 from sliceofml.display import Display
 
 
@@ -56,5 +57,10 @@ def login(relogin):
     help="Fetch the Top ML tweets for the past 7 days.",
 )
 def slice(frequency):
-    tweets = Api.query(frequency)
-    Display().tweetsAsTable(tweets, frequency)
+    display = Display()
+    credentials = read_credentials(TWITTER_API)
+    if credentials is None:
+        display.error("Please login before running this command! ❌")
+        return
+    tweets = API(credentials[0], credentials[1], TWITTER_API).query(frequency)
+    display.tweetsAsTable(tweets, frequency)
