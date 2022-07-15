@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "soml"
+name = "SliceOfML"
 version = "0.1.0"
 description = "Slice of ML or SOML is your little 🍰 of ML."
 authors = ["FL33TW00D <chris@notia.ai>"]
