@@ -14,7 +14,7 @@ from sliceofml.display import Display
 def cli():
     """
 
-    Slice of ML or SOML is your little 🍰 of ML.
+    Slice of ML is your little 🍰 of ML.
     A tiny, terminal, twitter client that fetches the top ML tweets of the past
     24 hours or 7 days!
 
