@@ -1,4 +1,4 @@
-from soml import __version__
+from sliceofml import __version__
 
 
 def test_version():

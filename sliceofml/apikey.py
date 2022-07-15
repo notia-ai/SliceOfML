@@ -10,7 +10,7 @@ from oauthlib.oauth2 import BackendApplicationClient
 from requests_oauthlib import OAuth2Session
 from requests.auth import HTTPBasicAuth
 
-from soml.display import Display
+from sliceofml.display import Display
 
 display = Display()
 

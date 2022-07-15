@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "SliceOfML"
+name = "sliceofml"
 version = "0.1.0"
 description = "Slice of ML or SOML is your little 🍰 of ML."
 authors = ["FL33TW00D <chris@notia.ai>"]
@@ -20,4 +20,4 @@ requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.scripts]
-soml = "soml.cli:cli"
+sliceofml = "sliceofml.cli:cli"

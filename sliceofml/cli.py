@@ -1,13 +1,13 @@
 import click
 
-from soml.apikey import (
+from sliceofml.apikey import (
     read_credentials,
     prompt_api_details,
     request_access_token,
     write_netrc,
 )
-from soml.config import TWITTER_API, Api
-from soml.display import Display
+from sliceofml.config import TWITTER_API, Api
+from sliceofml.display import Display
 
 
 @click.group()

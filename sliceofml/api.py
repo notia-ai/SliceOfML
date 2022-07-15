@@ -2,7 +2,7 @@ import requests
 from typing import Optional
 from .display import Display
 from datetime import datetime, timedelta
-from soml.apikey import read_credentials
+from sliceofml.apikey import read_credentials
 
 
 class API:
@@ -66,7 +66,7 @@ class API:
     def _build_url(self, next_token: Optional[str], frequency: str) -> str:
         query_url = (
             f"{self._request_url}?query=context:66.898661583827615744&"
-            "tweet.fields=public_metrics&max_results={self._page_size}&expansions=author_id"
+            f"tweet.fields=public_metrics&max_results={self._page_size}&expansions=author_id"
         )
         if next_token and len(next_token) > 1:
             query_url = f"{query_url}&next_token={next_token}"
