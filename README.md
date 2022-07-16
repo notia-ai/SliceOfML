@@ -7,7 +7,7 @@
 </a> 
 </p>
 
-https://user-images.githubusercontent.com/102609953/179343257-036c2cd2-2348-4086-bfcf-0f4ed044c57a.mp4
+![main-soml](https://user-images.githubusercontent.com/102609953/179343397-0cd398e0-1591-4d6f-99e7-31c516b807ac.png)
 
 Slice of ML is your little daily/weekly slice of ML!
 
