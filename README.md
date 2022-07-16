@@ -7,6 +7,8 @@
 </a> 
 </p>
 
+https://user-images.githubusercontent.com/102609953/179343257-036c2cd2-2348-4086-bfcf-0f4ed044c57a.mp4
+
 Slice of ML is your little daily/weekly slice of ML!
 
 A tiny terminal twitter client that fetches the top ML tweets of the past 24 hours or 7 days!
